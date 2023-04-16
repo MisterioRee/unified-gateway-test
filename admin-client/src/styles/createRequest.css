@@ -1,0 +1,61 @@
+
+.card {
+    max-width: 500px;
+    margin: auto; 
+    border-radius: 20 px;
+  }
+  
+  p {
+    margin: 0px;
+  }
+  
+  .container .h8 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .btn.btn-primary {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, var(--mainColor) 0%, var(--mainColorLight) 51%, var(--secondaryColor) 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+  
+  }
+
+  .description {
+    height: '90px'
+  }
+  
+  
+  .btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+   
+  
+  .form-control { 
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+  }
+  
+  .form-control:focus {
+    color: white;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColorLight);
+    box-shadow: none;
+  }
+   
+  ::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+  }

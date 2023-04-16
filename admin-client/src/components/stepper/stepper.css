@@ -1,0 +1,114 @@
+body {
+    color: var(--blurColor)
+  }
+  .headercontainer {
+    border-bottom: 2px solid var(--mainColorLight);
+  }
+  
+  .padding {
+    padding: 10px 100px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header span {
+    font-weight: 700;
+  }
+  
+  header span img {
+    width: 20px;
+    padding-right: 5px;
+  }
+  .alignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .steps {
+    padding: 30px 0px;
+  }
+  
+  .steps ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .steps li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps li:not(:last-child) {
+    padding-right: 75px;
+  }
+  
+  .active {
+    color: var(--mainColor);
+  }
+  
+  li span:first-child {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 2px 9px;
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+  
+  li span:last-child {
+    padding-bottom: 5px;
+  }
+  
+  .active span:last-child {
+    border-bottom: 2px solid var(--mainColor);
+  }
+  li {
+    position: relative;
+  }
+  li span:last-child {
+    display: inline-block;
+    background: var(--textColor);
+    position: relative;
+    z-index: 1;
+  }
+  li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 112px;
+    right: 0;
+    z-index: -1;
+    border-top: 3px dotted #bababa;
+  }
+  
+  .stepped {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stepped span {
+    margin-right: 2px;
+    border: 2px solid var(--mainColor);
+    padding: 5px 30px;
+    color: var(--mainColor);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .stepsCompleted span {
+    margin-right: 2px;
+    border: 2px solid var(--mainColor);
+    padding: 5px 30px;
+    color: var(--mainColor);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+ 
+  
